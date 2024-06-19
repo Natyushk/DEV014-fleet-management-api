@@ -1,0 +1,4 @@
+fleet_management_api/env
+fleet_management_api/fleet_management_api/__pycache__
+fleet_management_api/myapp/__pycache__
+fleet_management_api/myapp/migrations/__pycache__
