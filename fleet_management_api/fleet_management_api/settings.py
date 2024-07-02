@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'myapp',
+    'rest_framework_swagger',
 ]
 
 MIDDLEWARE = [
@@ -83,8 +84,24 @@ DATABASES = {
         'PASSWORD': '89WfmRhscltC',
         'HOST': 'ep-restless-wave-a4tmuewo-pooler.us-east-1.aws.neon.tech',
         'PORT': '5432',
+        'OPTIONS': {
+            'sslmode': 'require',
+        },
     }
 }
+
+SWAGGER_SETTINGS = {
+    'LOGIN_URL': 'rest_framework:login',
+    'LOGOUT_URL': 'rest_framework:logout',
+    'ENABLED_METHODS': [
+        'GET',
+        'POST',
+        'PUT',
+        'PATCH',
+        'DELETE'
+    ]
+}
+
 
 
 # Password validation
