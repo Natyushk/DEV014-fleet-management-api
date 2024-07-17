@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'rest_framework.authtoken'
+    'rest_framework.authtoken',
     'rest_framework_swagger',
     'myapp',
 ]
@@ -93,7 +93,7 @@ DATABASES = {
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework.authentication.TokenAuthentication',
+        ##'rest_framework.authentication.TokenAuthentication',
         'rest_framework.authentication.SessionAuthentication',
     ],
     'DEFAULT_PERMISSION_CLASSES': [
@@ -101,7 +101,7 @@ REST_FRAMEWORK = {
     ],
 }
 
-SWAGGER_SETTINGS = {
+'''SWAGGER_SETTINGS = {
     'LOGIN_URL': 'rest_framework:login',
     'LOGOUT_URL': 'rest_framework:logout',
     'ENABLED_METHODS': [
@@ -111,7 +111,7 @@ SWAGGER_SETTINGS = {
         'PATCH',
         'DELETE'
     ]
-}
+}'''
 
 
 
